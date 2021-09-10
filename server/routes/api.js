@@ -1,9 +1,11 @@
 const { Router } = require("express");
 
-const router = Router();
+const api = Router();
 
-router.use("/", (req, res) => res.json({ message: "end-to-end funciona" }));
+api.use("/", (req, res) => res.json({ message: "end-to-end funciona" }));
 
-router.use("/producto", require("./productos/index"));
+api.use("/producto", require("./productos/index"));
 
-module.exports = router;
+api.use("/userApi", require("./user/userRoutes"));
+
+module.exports = api;

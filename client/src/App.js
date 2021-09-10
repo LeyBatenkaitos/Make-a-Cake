@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./normalize.css";
+import Home from "./views/Home";
 
 const App = () => {
   const [msg, setMsg] = useState();
@@ -11,6 +12,7 @@ const App = () => {
   }, []);
   return (
     <>
+      <Home></Home>
       <h2>
         Mensaje del backend: <code>{JSON.stringify(msg)}</code>
       </h2>
