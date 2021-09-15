@@ -1,0 +1,39 @@
+### Prueba
+
+GET http://localhost:5000/api/pedido/test
+
+### Nuevo Producto
+
+POST http://localhost:5000/api/pedido/nuevo
+Content-Type: application/json
+
+{
+    "firstName": "ignacio",
+    "lastName": "locoharry",
+    "address": "las tarrias 23, chile",
+    "email": "juan56@gmail.com"
+}
+
+### Todos los Productos
+
+GET http://localhost:5000/api/pedido
+
+### Producto por ID
+
+GET http://localhost:5000/api/pedido/61426f4f6f64007c902f8636
+
+### Editar Producto por Id
+
+PUT http://localhost:5000/api/pedido/61426f4f6f64007c902f8636
+Content-Type: application/json
+
+{
+    "firstName": "Editado",
+    "lastName": "apellido editado",
+    "address": "direccion editada 25, china"
+}
+
+
+### Eliminar Producto por ID
+
+DELETE http://localhost:5000/api/pedido/61426f4f6f64007c902f8636
